@@ -1,0 +1,114 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "f479eda7-b85b-4ab1-af89-b3e6cada8aa0": {
+        "id": "f479eda7-b85b-4ab1-af89-b3e6cada8aa0",
+        "parent": null,
+        "name": "Glossama.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Glossama.py",
+        "cursor": {
+          "lineNumber": 40,
+          "column": 46
+        },
+        "config": {
+          "runtime": "python3.9",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "Glossama"
+        },
+        "triggers": [
+          {
+            "resourceName": "alexaSKedcc21c769b74a2e8497a7e46f1e9600",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1650033533418,
+        "testCases": {
+          "f9e63c2e-0046-4b73-a521-8e2075fc4f4d": {
+            "id": "f9e63c2e-0046-4b73-a521-8e2075fc4f4d",
+            "name": "Test event",
+            "functionId": "f479eda7-b85b-4ab1-af89-b3e6cada8aa0",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "724df671-cb6f-4228-a939-41eb0ece16a2": {
+        "id": "724df671-cb6f-4228-a939-41eb0ece16a2",
+        "parent": null,
+        "name": "requirements.txt",
+        "type": "TEXT_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "requirements.txt"
+      }
+    },
+    "openFiles": [
+      "f479eda7-b85b-4ab1-af89-b3e6cada8aa0"
+    ],
+    "currentFileId": "f479eda7-b85b-4ab1-af89-b3e6cada8aa0",
+    "resources": {
+      "alexaSKedcc21c769b74a2e8497a7e46f1e9600": {
+        "name": "alexaSKedcc21c769b74a2e8497a7e46f1e9600",
+        "type": "ALEXA",
+        "config": {
+          "type": 1,
+          "verifiedID": true,
+          "skillID": "amzn1.ask.skill.edcc21c7-69b7-4a2e-8497-a7e46f1e9600",
+          "applicationID": ""
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "ask_sdk_core": {
+          "name": "ask_sdk_core",
+          "version": "1.13.0",
+          "dev": false,
+          "language": "python"
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.10.0",
+    "projectName": "Glossama",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1650033471988
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "glossama",
+      "url": "https://github.com/betastudiosrl/glossama"
+    }
+  }
+}
