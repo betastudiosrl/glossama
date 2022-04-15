@@ -12,7 +12,7 @@
         "filePath": "Glossama.py",
         "cursor": {
           "lineNumber": 40,
-          "column": 46
+          "column": 38
         },
         "config": {
           "runtime": "python3.9",
@@ -102,7 +102,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1650033471988
+    "lastSave": 1650034972886
   },
   "VCS_STATE": {
     "provider": "GitHub",

@@ -8,7 +8,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
         return is_request_type("LaunchRequest")(handler_input)
 
     def handle(self,handler_input):
-        handler_input.response_builder.speak("Benvenuto in Glossama").set_should_end_session(False)
+        handler_input.response_builder.speak("Benvenuto nel dizionario italiano-griko. Chiedimi di tradurre qualsiasi parola e io lo farò per te.").set_should_end_session(False)
         return handler_input.response_builder.response
 
 class CatchAllExcetionHandler(AbstractExceptionHandler):
@@ -17,7 +17,7 @@ class CatchAllExcetionHandler(AbstractExceptionHandler):
 
     def handle(self , handler_input, exception):
         print(exception)
-        handler_input.response_builder.speak("Nessuna corrispondenza trovata. Per favore, riprova")
+        handler_input.response_builder.speak("Nessuna corrispondenza trovata. Per favore, riprova.")
         return handler_input.response_builder.response
 
 class GlossamaIntentHandler(AbstractRequestHandler):
@@ -25,8 +25,8 @@ class GlossamaIntentHandler(AbstractRequestHandler):
         return is_intent_name("ParolaIntent")(handler_input)
 
     def handle(self,handler_input):
-        word = handler_input.request_envelope.request.intent.slots['SearchQuery'].value
-        speech_text = "My custom intent handler"
+        word = handler_input.request_envelope.request.intent.slots.value
+        speech_text = "Ciao si dice hello"
         handler_input.response_builder.speak(speech_text).set_should_end_session(False)
         return handler_input.response_builder.response
 
@@ -36,6 +36,6 @@ sb.add_request_handler(LaunchRequestHandler())
 sb.add_exception_handler(CatchAllExcetionHandler())
 sb.add_request_handler(GlossamaIntentHandler())
 
-def handler(event , context):
-    return sb.lambda_handler()(event, context)
+def handler(event,context):
+    return sb.lambda_handler()(event,context)
 
