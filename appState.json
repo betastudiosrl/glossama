@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "Glossama.py",
         "cursor": {
-          "lineNumber": 40,
-          "column": 38
+          "lineNumber": 29,
+          "column": 35
         },
         "config": {
           "runtime": "python3.9",
@@ -28,7 +28,7 @@
             "config": {}
           }
         ],
-        "lastUpdated": 1650033533418,
+        "lastUpdated": 1650362247077,
         "testCases": {
           "f9e63c2e-0046-4b73-a521-8e2075fc4f4d": {
             "id": "f9e63c2e-0046-4b73-a521-8e2075fc4f4d",
@@ -69,7 +69,7 @@
     "customTemplate": {
       "syntax": "JSON",
       "overrideDefault": false,
-      "dialect": null,
+      "dialect": "CloudFormation",
       "definitions": null
     },
     "envVariables": [
@@ -102,7 +102,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1650034972886
+    "lastSave": 1650362307556
   },
   "VCS_STATE": {
     "provider": "GitHub",

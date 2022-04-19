@@ -22,11 +22,11 @@ class CatchAllExcetionHandler(AbstractExceptionHandler):
 
 class GlossamaIntentHandler(AbstractRequestHandler):
     def can_handle(self,handler_input):
-        return is_intent_name("ParolaIntent")(handler_input)
+        return is_intent_name("ParolaItalianaIntent")(handler_input)
 
     def handle(self,handler_input):
-        word = handler_input.request_envelope.request.intent.slots.value
-        speech_text = "Ciao si dice hello"
+        word = handler_input.request_envelope.request.intent.slots['year'].value
+        speech_text = "Corigliano"
         handler_input.response_builder.speak(speech_text).set_should_end_session(False)
         return handler_input.response_builder.response
 
